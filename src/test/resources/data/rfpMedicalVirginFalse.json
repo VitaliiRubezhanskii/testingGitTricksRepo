@@ -1,0 +1,72 @@
+[
+ {
+    "id": null,
+    "client_id": null,
+    "alongside": false,
+    "buyUp": false,
+    "comments": "None",
+    "commission": "2",
+    "contributionType": "%",
+    "optionCount": 1,
+    "carrierHistories": [
+      {
+        "current": true,
+        "name": "Anthem Blue Cross",
+        "years": 1,
+        "rfpId": null,
+        "id": null
+      },
+      {
+        "current": false,
+        "name": "Aetna",
+        "years": 1,
+        "rfpId": null,
+        "id": null
+      }
+    ],
+    "paymentMethod": "%",
+    "priorCarrier": true,
+    "brokerOfRecord": true,
+    "quoteAlteTiers": 0,
+    "ratingTiers": 1,
+    "selfFunding": false,
+    "takeOver": false,
+    "largeClaims": "Aware",
+    "product": "MEDICAL",
+    "waitingPeriod": "1st of the month following date of hire",
+    "options": [
+      {
+        "label": "DummyMedicalPlan",
+        "planType": "PPO",
+        "matchCurrent": false,
+        "quoteAlt": false,
+        "outOfStateContribution": false,
+        "outOfStateRenewal": false,
+        "outOfStateRate": false,
+        "outOfStateCensus": false,
+        "altRequest": null,
+        "selectedNetwork": {
+          "networkId": 34
+        },
+        "selectedCarrier": {
+          "carrierId": 3
+        },
+        "rateType": "COMPOSITE",
+        "monthlyBandedPremium": null,
+        "oufOfStateMonthlyBandedPremium": null,
+        "monthlyBandedPremiumRenewal": null,
+        "oufOfStateMonthlyBandedPremiumRenewal": null,
+        "rfpId": null,
+        "id": null,
+        "tier1Contribution": 5,
+        "tier1Rate": 0,
+        "tier1Renewal": null,
+        "tier1Census": 0,
+        "tier1OosContribution": null,
+        "tier1OosRate": null,
+        "tier1OosRenewal": null,
+        "tier1OosCensus": null
+      }
+    ]
+ }
+]

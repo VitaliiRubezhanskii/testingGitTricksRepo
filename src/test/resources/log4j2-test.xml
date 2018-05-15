@@ -1,0 +1,27 @@
+<Configuration monitorInterval="60">
+    <Properties>
+        <Property name="console_pattern">[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%c] (%t) (%X) - %msg%n</Property>
+    </Properties>
+
+    <Appenders>
+        <Console name="Console-Appender" target="SYSTEM_OUT">
+            <ThresholdFilter level="DEBUG" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout>
+                <pattern>
+                    ${console_pattern}
+                </pattern>
+            </PatternLayout>
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <Root level="INFO">
+            <AppenderRef ref="Console-Appender"/>
+        </Root>
+    </Loggers>
+    <Loggers>
+        <Root level="DEBUG">
+            <AppenderRef ref="Console-Appender"/>
+        </Root>
+    </Loggers>
+</Configuration>
