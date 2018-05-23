@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+$(document).ready(function() {
 
     // GET REQUEST
     $("#getAllCustomerId").click(function(event){
@@ -10,7 +10,7 @@ $( document ).ready(function() {
     function ajaxGet(){
         $.ajax({
             type : "GET",
-            url : window.location + "liba/books",
+            url : "http://localhost:8080/liba/books",
             success: function(response){
                 if(response.status=="Ok" ){
                     $('#getResultDiv ul').empty();

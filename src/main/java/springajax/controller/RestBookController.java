@@ -30,8 +30,10 @@ public class RestBookController {
 
 
     @PostMapping("/save")
-    public Book save(@RequestBody Book book){
-        return bookService.save(book);
+    public Response save(@RequestBody Book book){
+        List<Book> bookadded=new ArrayList<>();
+        bookadded.add(bookService.save(book));
+        return new Response("Ok",bookadded);
     }
 
     @DeleteMapping("delete/{id}")
