@@ -11,41 +11,26 @@ import java.util.List;
 public class BookServiceImpl implements BookService {
 
     @Autowired
-    private BookCustomStorage bookCustomStorage;
+    private BookRepository bookRepository;
 
     @Override
     public Book save(Book book) {
-         bookCustomStorage.setBook(book);
-         return book;
-    }
-
-    @Override
-    public Book update(Book book) {
-        return null;
+        return bookRepository.save(book);
     }
 
     @Override
     public Book delete(Book book) {
-         bookCustomStorage.deleteBook(book);
+         bookRepository.delete(book);
          return book;
     }
 
     @Override
     public Book getOneBook(int id) {
-        Book foundBook=null;
-        List<Book> books= bookCustomStorage.getBookList();
-
-        for (Book book:books){
-                 if (book.getId()==id){
-                     foundBook=book;
-                 }
-        }
-             return foundBook;
-
-    }
+        return bookRepository.findOne(id);
+     }
 
     @Override
     public List<Book> getAllBooks() {
-        return bookCustomStorage.getBookList();
+        return bookRepository.findAll();
     }
 }

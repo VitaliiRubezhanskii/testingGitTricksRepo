@@ -8,10 +8,15 @@ import springajax.service.BookService;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 @RestController
 @RequestMapping("/liba")
 public class RestBookController {
+
+
+    private static final Logger LOGGER = Logger.getLogger( RestBookController.class.getName());
 
     @Autowired
     private BookService bookService;
@@ -19,7 +24,9 @@ public class RestBookController {
 
     @GetMapping("/books")
     public Response getAllBooks(){
-        return new Response("Ok",bookService.getAllBooks());
+        List<Book> foundAllBooks=bookService.getAllBooks();
+        LOGGER.log( Level.INFO, "found books in count of "+ foundAllBooks.size());
+        return new Response("Ok",foundAllBooks);
     }
 
 

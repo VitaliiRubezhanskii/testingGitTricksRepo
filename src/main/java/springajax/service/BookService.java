@@ -7,7 +7,6 @@ import java.util.List;
 public interface BookService {
 
     Book save(Book book);
-    Book update(Book book);
     Book delete(Book book);
     Book getOneBook(int id);
     List<Book> getAllBooks();

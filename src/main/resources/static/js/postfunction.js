@@ -5,7 +5,6 @@ $(document).ready(function () {
     })
 
     function ajaxPost() {
-
         //prepare data
         var book={
             title : $("#title").val(),
@@ -13,15 +12,12 @@ $(document).ready(function () {
             isbn : $("#isbn").val(),
             genre : $("#genre").val()
         }
-
         $.ajax({
-
             type:"POST",
             contentType:"application/json",
             url: "http://localhost:8080/liba/save",
             data: JSON.stringify(book),
             dataType: 'json',
-
             success:function (response) {
                 if (response.status=="Ok"){
 
