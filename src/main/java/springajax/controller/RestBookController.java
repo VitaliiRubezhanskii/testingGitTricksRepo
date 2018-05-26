@@ -36,7 +36,7 @@ public class RestBookController {
     }
 
 
-    @PostMapping("/save")
+    @PostMapping("/books")
     public Response save(@RequestBody Book book){
         List<Book> bookadded=new ArrayList<>();
         bookadded.add(bookService.save(book));
