@@ -21,7 +21,7 @@ public class RestBookController {
     @Autowired
     private BookService bookService;
 
-    @CrossOrigin(origins = "http://localhost:4200")
+    @CrossOrigin(origins = "http://localhost:4202")
     @GetMapping("/books")
     public List<Book> getAllBooks(){
         List<Book> foundAllBooks=bookService.getAllBooks();
