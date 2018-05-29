@@ -8,7 +8,7 @@ import javax.persistence.*;
 public class Book {
 
     private int id;
-    private String title;
+    private String bookTitle;
     private String author;
     private String isbn;
     private String genre;
@@ -16,13 +16,6 @@ public class Book {
     public Book() {
     }
 
-    public Book(int id, String title, String author, String isbn, String genre) {
-        this.id = id;
-        this.title = title;
-        this.author = author;
-        this.isbn = isbn;
-        this.genre = genre;
-    }
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -33,13 +26,21 @@ public class Book {
         this.id = id;
     }
 
+    public Book(int id, String bookTitle, String author, String isbn, String genre) {
+        this.id = id;
+        this.bookTitle = bookTitle;
+        this.author = author;
+        this.isbn = isbn;
+        this.genre = genre;
+    }
     @Column(name = "title")
-    public String getTitle() {
-        return title;
+    public String getBookTitle() {
+        return bookTitle;
     }
-    public void setTitle(String title) {
-        this.title = title;
+    public void setBookTitle(String bookTitle) {
+        this.bookTitle = bookTitle;
     }
+
 
     @Column(name="author")
     public String getAuthor() {

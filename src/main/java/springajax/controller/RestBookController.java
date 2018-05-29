@@ -21,7 +21,7 @@ public class RestBookController {
     @Autowired
     private BookService bookService;
 
-    @CrossOrigin(origins = "http://localhost:4202")
+    @CrossOrigin(origins = "http://localhost:4200")
     @GetMapping("/books")
     public List<Book> getAllBooks(){
         List<Book> foundAllBooks=bookService.getAllBooks();
@@ -29,13 +29,13 @@ public class RestBookController {
         return foundAllBooks;//new Response("Ok",foundAllBooks);
     }
 
-
-    @GetMapping("/book/{id}")
+    @CrossOrigin(origins = "http://localhost:4200")
+    @GetMapping("/books/{id}")
     public Book getOneBook(@PathVariable int id){
         return bookService.getOneBook(id);
     }
 
-
+    @CrossOrigin(origins = "http://localhost:4200")
     @PostMapping(value = "/books",produces = "application/json",consumes = "application/json")
     public Response save(@RequestBody Book book){
         List<Book> bookadded=new ArrayList<>();
