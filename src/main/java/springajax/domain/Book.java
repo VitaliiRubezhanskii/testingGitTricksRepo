@@ -1,6 +1,8 @@
 package springajax.domain;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.util.Set;
 
@@ -10,22 +12,26 @@ public class Book {
 
     private int id;
     private String bookTitle;
-    private String author;
+
     private String isbn;
     private String genre;
     private Set<Author> authors;
+    private Category category;
 
     public Book() {
     }
 
-    public Book(int id, String bookTitle, String author,
-                String isbn, String genre, Set<Author> authors) {
+
+
+    public Book(int id, String bookTitle,
+                String isbn, String genre, Set<Author> authors,
+                Category category) {
         this.id = id;
         this.bookTitle = bookTitle;
-        this.author = author;
         this.isbn = isbn;
         this.genre = genre;
         this.authors = authors;
+        this.category = category;
     }
 
     @Id
@@ -64,7 +70,7 @@ public class Book {
         this.genre = genre;
     }
 
-    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinTable(name = "book_author",  joinColumns = {
             @JoinColumn(name = "book_id", nullable = false, updatable = false) },
             inverseJoinColumns = { @JoinColumn(name = "author_id",
@@ -74,5 +80,14 @@ public class Book {
     }
     public void setAuthors(Set<Author> authors) {
         this.authors = authors;
+    }
+
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "books_book_id",updatable = false,insertable = false)
+    public Category getCategory() {
+        return category;
+    }
+    public void setCategory(Category category) {
+        this.category = category;
     }
 }

@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
-import springajax.localstorage.BookCustomStorage;
+
 
 
 @SpringBootApplication
@@ -18,10 +18,7 @@ public class SpringAjaxRestApplication {
     }
 
 
-    @Bean
-    public static BookCustomStorage bookCustomStorage(){
-        return new BookCustomStorage();
-    }
+
 
     @Bean
     public WebMvcConfigurer corsConfigurer() {

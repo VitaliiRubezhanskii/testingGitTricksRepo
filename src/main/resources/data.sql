@@ -36,3 +36,7 @@ INSERT INTO liba.book (book_id, title, isbn, genre) VALUES (15, 'BookTitle15', '
 INSERT INTO liba.book (book_id, title, isbn, genre) VALUES (16, 'BookTitle16', 'ISBN16', 'Genre16');
 INSERT INTO liba.book (book_id, title, isbn, genre) VALUES (17, 'BookTitle17', 'ISBN17', 'Genre17');
 INSERT INTO liba.book (book_id, title, isbn, genre) VALUES (18, 'BookTitle18', 'ISBN18', 'Genre18');
+
+INSERT INTO liba.category (id,category_name) VALUES (1,'FirstCategory');
+INSERT INTO liba.category (id,category_name) VALUES (2,'SecondaryCategory');
+

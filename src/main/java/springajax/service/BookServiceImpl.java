@@ -1,10 +1,12 @@
 package springajax.service;
 
+import org.springframework.data.domain.PageRequest;
 import springajax.domain.Book;
-import springajax.localstorage.BookCustomStorage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import springajax.service.helper.PageParameter;
 
+import java.awt.print.Pageable;
 import java.util.List;
 
 @Service
@@ -34,4 +36,12 @@ public class BookServiceImpl implements BookService {
     public List<Book> getAllBooks() {
         return bookRepository.findAll();
     }
+
+    public List<Book> getAllPaginatedBooks(int page,int size) {
+
+        int sizeOfList=bookRepository.findAll().size();
+        return bookRepository.findAll(new PageRequest(--page,size)).getContent();
+    }
+
+
 }

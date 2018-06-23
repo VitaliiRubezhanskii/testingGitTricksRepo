@@ -2,9 +2,10 @@ package springajax.controller;
 
 import springajax.domain.Book;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class Response {
+public class Response implements Serializable {
 
     private String status;
    private List<Book> books;

@@ -6,4 +6,5 @@ import springajax.domain.Book;
 public interface BookRepository extends JpaRepository<Book,Integer> {
 
 
+
 }

@@ -2,22 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b00e09f-e123-475b-b705-c7d0959511dd" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/springajax/domain/Author.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/springajax/domain/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/springajax/exception/BookNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/springajax/exceptionhandler/BookRestResponseEntityExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/springajax/service/helper/PageParameter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/0120f48b-5ab0-4a5e-90e6-e36f8e9247a5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0120f48b-5ab0-4a5e-90e6-e36f8e9247a5.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/springajax/SpringAjaxRestApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/springajax/SpringAjaxRestApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/springajax/controller/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/springajax/controller/Response.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/springajax/controller/RestBookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/springajax/controller/RestBookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/springajax/domain/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/springajax/domain/Author.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/springajax/domain/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/springajax/domain/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/springajax/localstorage/BookCustomStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/springajax/localstorage/BookCustomStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/springajax/localstorage/BookCustomStorage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/springajax/service/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/springajax/service/BookRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/springajax/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/springajax/service/BookService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/springajax/service/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/springajax/service/BookServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/springajax/SpringAjaxRestApplication$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springajax/SpringAjaxRestApplication$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/springajax/SpringAjaxRestApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springajax/SpringAjaxRestApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/springajax/controller/RestBookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springajax/controller/RestBookController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/springajax/domain/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springajax/domain/Book.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/springajax/localstorage/BookCustomStorage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springajax/localstorage/BookCustomStorage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/springajax/localstorage/BookCustomStorage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/springajax/service/BookService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springajax/service/BookService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/springajax/service/BookServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springajax/service/BookServiceImpl.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -56,34 +64,131 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="liba: schema" type="c314c289:MysqlImplModel$Schema" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="liba@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="liba: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="book: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="liba@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="liba: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="category: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="liba@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="liba: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="category_books: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="data.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/data.sql">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Author.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/springajax/domain/Author.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="666">
-              <caret line="37" column="100" selection-start-line="37" selection-start-column="100" selection-end-line="37" selection-end-column="100" />
+            <state relative-caret-position="234">
+              <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Book.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/springajax/domain/Book.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="647">
+              <caret line="84" column="64" selection-start-line="84" selection-start-column="64" selection-end-line="84" selection-end-column="64" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="category_books" pinned="false" current-in-tab="false">
+        <entry file="das://0120f48b-5ab0-4a5e-90e6-e36f8e9247a5/schema/liba/table/category_books">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="book_author" pinned="false" current-in-tab="false">
+        <entry file="das://0120f48b-5ab0-4a5e-90e6-e36f8e9247a5/schema/liba/table/book_author">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="category" pinned="false" current-in-tab="false">
+        <entry file="das://0120f48b-5ab0-4a5e-90e6-e36f8e9247a5/schema/liba/table/category">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="book" pinned="false" current-in-tab="false">
+        <entry file="das://0120f48b-5ab0-4a5e-90e6-e36f8e9247a5/schema/liba/table/book">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Category.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/springajax/domain/Category.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="665">
+              <caret line="44" column="15" selection-start-line="44" selection-start-column="15" selection-end-line="44" selection-end-column="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#431#432#0" expanded="true" />
+                <element signature="e#456#457#0" expanded="true" />
+                <element signature="e#488#489#0" expanded="true" />
+                <element signature="e#516#517#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RestBookController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/springajax/controller/RestBookController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="341">
+              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+            <state relative-caret-position="198">
+              <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0120f48b-5ab0-4a5e-90e6-e36f8e9247a5/console.sql">
+      <file leaf-file-name="Response.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/springajax/controller/Response.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="72">
+              <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -122,13 +227,9 @@
         <option value="$PROJECT_DIR$/src/main/java/controller/RestBookController.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/BookServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/SpringAjaxRestApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/springajax/SpringAjaxRestApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/springajax/controller/Response.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/getfunction.js" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/postfunction.js" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/deletefunction.js" />
-        <option value="$PROJECT_DIR$/src/main/java/springajax/service/BookRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/springajax/service/BookService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/angular/sevice.js" />
         <option value="$PROJECT_DIR$/src/main/resources/angular/controller.js" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/indexv1.html" />
@@ -146,17 +247,26 @@
         <option value="$PROJECT_DIR$/src/main/frontend/src/app/service/book.service.ts" />
         <option value="$PROJECT_DIR$/src/main/frontend/src/app/app.component.ts" />
         <option value="$PROJECT_DIR$/src/main/frontend/src/app/app.component.html" />
-        <option value="$PROJECT_DIR$/src/main/java/springajax/controller/RestBookController.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0120f48b-5ab0-4a5e-90e6-e36f8e9247a5/console_1.sql" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/springajax/localstorage/BookCustomStorage.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0120f48b-5ab0-4a5e-90e6-e36f8e9247a5/console.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/springajax/service/BookServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/springajax/domain/Author.java" />
-        <option value="$PROJECT_DIR$/src/main/java/springajax/domain/Book.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/sql/data.sql" />
         <option value="$PROJECT_DIR$/src/main/resources/static/sql/schema.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/springajax/SpringAjaxRestApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/springajax/exception/BookNotFoundException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/springajax/exceptionhandler/BookRestResponseEntityExceptionHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/springajax/service/BookRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/springajax/service/helper/PageParameter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/springajax/service/BookService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/springajax/service/BookServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/springajax/controller/RestBookController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/springajax/domain/Author.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/data.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/springajax/controller/Response.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/springajax/domain/Book.java" />
+        <option value="$PROJECT_DIR$/src/main/java/springajax/domain/Category.java" />
       </list>
     </option>
   </component>
@@ -188,40 +298,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="Scope" />
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="testingGitTricksRepo" type="58d84e3e:PackageViewProjectNode" />
-              <item name="springajaxrest" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="testingGitTricksRepo" type="58d84e3e:PackageViewProjectNode" />
-              <item name="springajaxrest" type="616d4139:PackageViewModuleNode" />
-              <item name="springajax" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="testingGitTricksRepo" type="58d84e3e:PackageViewProjectNode" />
-              <item name="springajaxrest" type="616d4139:PackageViewModuleNode" />
-              <item name="springajax" type="1f31426a:PackageElementNode" />
-              <item name="controller" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="testingGitTricksRepo" type="58d84e3e:PackageViewProjectNode" />
-              <item name="springajaxrest" type="616d4139:PackageViewModuleNode" />
-              <item name="static" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="testingGitTricksRepo" type="58d84e3e:PackageViewProjectNode" />
-              <item name="springajaxrest" type="616d4139:PackageViewModuleNode" />
-              <item name="templates" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -262,6 +339,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="springajax" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testingGitTricksRepo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testingGitTricksRepo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="springajax" type="462c0819:PsiDirectoryNode" />
               <item name="domain" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -271,7 +357,35 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="springajax" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testingGitTricksRepo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testingGitTricksRepo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="springajax" type="462c0819:PsiDirectoryNode" />
+              <item name="exceptionhandler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testingGitTricksRepo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testingGitTricksRepo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="springajax" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testingGitTricksRepo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testingGitTricksRepo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="springajax" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="helper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="testingGitTricksRepo" type="b2602c69:ProjectViewProjectNode" />
@@ -292,6 +406,39 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="testingGitTricksRepo" type="58d84e3e:PackageViewProjectNode" />
+              <item name="springajaxrest" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="testingGitTricksRepo" type="58d84e3e:PackageViewProjectNode" />
+              <item name="springajaxrest" type="616d4139:PackageViewModuleNode" />
+              <item name="springajax" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="testingGitTricksRepo" type="58d84e3e:PackageViewProjectNode" />
+              <item name="springajaxrest" type="616d4139:PackageViewModuleNode" />
+              <item name="springajax" type="1f31426a:PackageElementNode" />
+              <item name="controller" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="testingGitTricksRepo" type="58d84e3e:PackageViewProjectNode" />
+              <item name="springajaxrest" type="616d4139:PackageViewModuleNode" />
+              <item name="static" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="testingGitTricksRepo" type="58d84e3e:PackageViewProjectNode" />
+              <item name="springajaxrest" type="616d4139:PackageViewModuleNode" />
+              <item name="templates" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -303,7 +450,7 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RequestMappingsPanelWidth2" value="75" />
-    <property name="SearchEverywhereHistoryKey" value="Response&#9;FILE&#9;file:///home/vitalii/IdeaProjects/testingGitTricksRepo/src/main/java/springajax/controller/Response.java" />
+    <property name="SearchEverywhereHistoryKey" value="ResponseEntityExcep&#9;PSI&#9;JAVA://org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler&#10;Response&#9;FILE&#9;file:///home/vitalii/IdeaProjects/testingGitTricksRepo/src/main/java/springajax/controller/Response.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
@@ -366,7 +513,7 @@
     <configuration name="SpringAjaxRestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="springajaxrest" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="springajax.SpringAjaxRestApplication" />
-      <option name="VM_PARAMETERS" value="-Dserver.port=8081" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=8082" />
       <option name="ALTERNATIVE_JRE_PATH" />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -413,6 +560,7 @@
       <workItem from="1527445931661" duration="606000" />
       <workItem from="1527527101778" duration="1657000" />
       <workItem from="1527609886345" duration="11242000" />
+      <workItem from="1529766537044" duration="7289000" />
     </task>
     <task id="LOCAL-00001" summary="implemented ajax post method functionality">
       <created>1527083985032</created>
@@ -449,80 +597,67 @@
       <option name="project" value="LOCAL" />
       <updated>1527429042155</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Authors added">
+      <created>1529721188246</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1529721188246</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77759000" />
+    <option name="totallyTimeSpent" value="93024000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info id="Capture Tool" />
-      <window_info id="Designer" />
-      <window_info anchor="right" id="Database" visible="true" weight="0.2241284" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32887402" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info id="Image Layers" />
-      <window_info anchor="bottom" id="Java Enterprise" order="7" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.6688963" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Database Console" order="8" weight="0.32887402" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24958494" />
-      <window_info anchor="right" id="Bean Validation" order="3" />
-      <window_info id="Web" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32998884" />
-      <window_info id="Learn" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Designer" order="10" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.6060606" />
-      <window_info id="Image Layers" order="11" />
-      <window_info anchor="bottom" id="TypeScript" order="7" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="14" />
+      <window_info id="Designer" order="10" />
+      <window_info anchor="right" id="Database" order="3" weight="0.28057554" />
+      <window_info id="Structure" order="8" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="12" />
-      <window_info id="Favorites" order="13" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.31709957" />
-      <window_info id="Capture Tool" order="14" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.26120642" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info id="Learn" order="4" weight="0.32982844" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.14056447" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39910814" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32887402" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="11" />
+      <window_info anchor="bottom" id="Java Enterprise" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.60535115" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.31709957" />
+      <window_info anchor="bottom" id="Database Console" order="8" weight="0.32887402" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.26452684" />
+      <window_info anchor="right" id="Bean Validation" order="3" />
+      <window_info id="Web" order="9" side_tool="true" />
+      <window_info id="Learn" order="4" weight="0.32982844" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Structure" order="8" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39978448" />
+      <window_info id="Favorites" order="13" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" x="0" y="0" width="430" height="882" id="Documentation" order="3" side_tool="true" weight="0.32977587" />
+      <window_info anchor="bottom" id="TypeScript" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32998884" />
     </layout>
     <layout-to-restore>
       <window_info id="Designer" order="0" />
       <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="bottom" id="Run" order="9" weight="0.60860217" />
       <window_info anchor="bottom" id="Spring" order="0" />
       <window_info id="Image Layers" order="1" />
-      <window_info anchor="bottom" id="Run" order="9" weight="0.60860217" />
+      <window_info anchor="bottom" id="Find" order="8" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -547,9 +682,8 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="8" />
-      <window_info anchor="right" id="Bean Validation" order="6" />
       <window_info anchor="bottom" id="Debug" order="10" weight="0.4" />
+      <window_info anchor="right" id="Bean Validation" order="6" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -561,11 +695,12 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="implemented ajax post method functionality" />
     <MESSAGE value="developed angular 2 client" />
-    <option name="LAST_COMMIT_MESSAGE" value="developed angular 2 client" />
+    <MESSAGE value="Authors added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Authors added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -573,52 +708,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/frontend/src/app/app.component.css" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/springajax/controller/Response.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/springajax/controller/IndexController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/springajax/service/BookService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/frontend/src/app/model/book.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/frontend/src/app/service/book.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://0120f48b-5ab0-4a5e-90e6-e36f8e9247a5/schema/liba/table/book" />
-    <entry file="file://$PROJECT_DIR$/src/main/frontend/src/app/app.component.ts" />
-    <entry file="file://$PROJECT_DIR$/src/main/frontend/src/app/app.component.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/springajax/controller/RestBookController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/SELECT_t___FROM_liba_book_t.tsv" />
     <entry file="das://0120f48b-5ab0-4a5e-90e6-e36f8e9247a5/schema/liba/table/book">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -661,121 +751,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://0120f48b-5ab0-4a5e-90e6-e36f8e9247a5/schema/liba/table/book">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SELECT_t___FROM_liba_book_t.tsv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://0120f48b-5ab0-4a5e-90e6-e36f8e9247a5/schema/liba/table/book">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://0120f48b-5ab0-4a5e-90e6-e36f8e9247a5/schema/liba/table/book">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://0120f48b-5ab0-4a5e-90e6-e36f8e9247a5/schema/liba/table/book">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://0120f48b-5ab0-4a5e-90e6-e36f8e9247a5/schema/liba/table/book">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://0120f48b-5ab0-4a5e-90e6-e36f8e9247a5/schema/liba/table/book">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://0120f48b-5ab0-4a5e-90e6-e36f8e9247a5/schema/liba/table/book">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/liba_book.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/liba_book.sql" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0120f48b-5ab0-4a5e-90e6-e36f8e9247a5/console_1.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/springajax/localstorage/BookCustomStorage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="19" column="30" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="19" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/springajax/service/BookRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/springajax/SpringAjaxRestApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/springajax/service/BookServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#734#735#0" expanded="true" />
-            <element signature="e#781#782#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/springajax/domain/Author.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="59" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/springajax/domain/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -845,35 +825,195 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/sql/liba_author.sql">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/sql/liba_author.sql" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/sql/liba_book.sql" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/sql/schema.sql" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0120f48b-5ab0-4a5e-90e6-e36f8e9247a5/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="17" selection-end-column="68" />
+        <state relative-caret-position="108">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/sql/liba_book.sql">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-54" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/springajax/localstorage/BookCustomStorage.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/springajax/controller/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/springajax/SpringAjaxRestApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.11.RELEASE/spring-webmvc-4.3.11.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ResponseEntityExceptionHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="109" column="37" selection-start-line="109" selection-start-column="37" selection-end-line="109" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar!/javax/validation/ConstraintViolation.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="9" column="41" lean-forward="true" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-validator/5.3.5.Final/hibernate-validator-5.3.5.Final.jar!/org/hibernate/validator/internal/engine/ConstraintViolationImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="47" column="12" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/springajax/exception/BookNotFoundException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#187#188#0" expanded="true" />
+            <element signature="e#217#218#0" expanded="true" />
+            <element signature="e#286#287#0" expanded="true" />
+            <element signature="e#323#324#0" expanded="true" />
+            <element signature="e#376#377#0" expanded="true" />
+            <element signature="e#404#405#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/springajax/exceptionhandler/BookRestResponseEntityExceptionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="26" column="54" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.11.RELEASE/spring-web-4.3.11.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="117" selection-start-line="117" selection-end-line="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/1.13.7.RELEASE/spring-data-commons-1.13.7.RELEASE.jar!/org/springframework/data/repository/PagingAndSortingRepository.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/1.13.7.RELEASE/spring-data-commons-1.13.7.RELEASE.jar!/org/springframework/data/domain/PageRequest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+          <folding>
+            <element signature="e#404#405#0" expanded="true" />
+            <element signature="e#448#449#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/springajax/service/helper/PageParameter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="e#310#311#0" expanded="true" />
+            <element signature="e#341#342#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/springajax/service/BookService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/springajax/service/BookServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="647">
+          <caret line="42" column="56" selection-start-line="42" selection-start-column="56" selection-end-line="42" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/springajax/service/BookRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://0120f48b-5ab0-4a5e-90e6-e36f8e9247a5/schema/liba/table/author">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
-          <caret selection-end-line="17" selection-end-column="100" />
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/data.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="37" column="100" selection-start-line="37" selection-start-column="100" selection-end-line="37" selection-end-column="100" />
+        <state relative-caret-position="169">
+          <caret line="40" column="65" selection-start-line="40" selection-start-column="65" selection-end-line="40" selection-end-column="65" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/sql/schema.sql">
+    <entry file="file://$PROJECT_DIR$/src/main/java/springajax/controller/RestBookController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="341">
+          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
         </state>
       </provider>
     </entry>
-    <entry file="das://0120f48b-5ab0-4a5e-90e6-e36f8e9247a5/schema/liba/table/author">
+    <entry file="file://$PROJECT_DIR$/src/main/java/springajax/controller/Response.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/springajax/domain/Author.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://0120f48b-5ab0-4a5e-90e6-e36f8e9247a5/schema/liba/table/book">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://0120f48b-5ab0-4a5e-90e6-e36f8e9247a5/schema/liba/table/category">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -887,24 +1027,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://0120f48b-5ab0-4a5e-90e6-e36f8e9247a5/schema/liba/table/book">
+    <entry file="das://0120f48b-5ab0-4a5e-90e6-e36f8e9247a5/schema/liba/table/category_books">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0120f48b-5ab0-4a5e-90e6-e36f8e9247a5/console.sql">
+    <entry file="file://$PROJECT_DIR$/src/main/java/springajax/domain/Book.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="647">
+          <caret line="84" column="64" selection-start-line="84" selection-start-column="64" selection-end-line="84" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/springajax/domain/Category.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        <state relative-caret-position="665">
+          <caret line="44" column="15" selection-start-line="44" selection-start-column="15" selection-end-line="44" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#431#432#0" expanded="true" />
+            <element signature="e#456#457#0" expanded="true" />
+            <element signature="e#488#489#0" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
