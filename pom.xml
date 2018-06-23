@@ -36,7 +36,13 @@
             <version>1.0.0.Final</version>
         </dependency>
 
-
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok-maven -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok-maven</artifactId>
+            <version>1.16.22.0</version>
+            <type>pom</type>
+        </dependency>
 
 
         <!-- mysql -->

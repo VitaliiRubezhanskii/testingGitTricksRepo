@@ -14,10 +14,10 @@ public class BookCustomStorage {
 
     public BookCustomStorage() {
         //initial data
-        Book book1=new Book(1,"Rest","John Doe","isbn1","programming");
-        Book book2=new Book(2,"Hibernate","John Smith","isbn2","programming");
-        bookList.add(book1);
-        bookList.add(book2);
+//        Book book1=new Book(1,"Rest","John Doe","isbn1","programming");
+//        Book book2=new Book(2,"Hibernate","John Smith","isbn2","programming");
+//        bookList.add(book1);
+//        bookList.add(book2);
     }
 
     public List<Book> getBookList() {
